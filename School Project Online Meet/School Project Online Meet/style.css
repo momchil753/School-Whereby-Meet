@@ -151,6 +151,11 @@ h6 {font-family: "Montserrat";}
     opacity: 0.3;
 }
 
+.middle:hover .image
+{
+    opacity: 0.3;
+}
+
 .image:hover .middle
 {
     opacity: 1;
