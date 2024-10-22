@@ -129,15 +129,14 @@ h6 {font-family: "Montserrat";}
 
 .image
 {
-    width: 27vw;
     height: auto;
-    transition: .5s ease;
+    transition: 1s ease;
     backface-visibility: hidden;
 }
   
 .middle
 {
-    transition: .5s ease;
+    transition: 1s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -151,12 +150,12 @@ h6 {font-family: "Montserrat";}
 {
     opacity: 0.3;
 }
-  
-.images:hover .middle
+
+.image:hover .middle
 {
     opacity: 1;
-    font-size: 2rem;
-    color: black;
+    font-size: 3rem;
+    color: white
 }
 
 .container
@@ -191,13 +190,13 @@ h6 {font-family: "Montserrat";}
     text-align: center
 }
 
-.container .things
+.container .info
 {
     padding-left: 4em;
     padding-right: 4em;
 }
 
-.container .things li
+.container .info li
 {
     list-style-type: circle;
     color: #667392;
