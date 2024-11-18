@@ -1,0 +1,180 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font: 14px/1.5;
+    scroll-behavior: smooth;
+}
+
+body, button
+{
+    font-family: "Helvetica";
+}
+
+h1 {font-family: "Helvetica";}
+h2 {font-family: "Helvetica";}
+h3 {font-family: "Helvetica";}
+h4 {font-family: "Helvetica";}
+h5 {font-family: "Helvetica";}
+h6 {font-family: "Helvetica";}
+
+body
+{
+    background-color: aliceblue;
+}
+
+/* Nav-bar */
+
+.btn {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-1 {
+  
+  svg {
+    height: 4.8vh;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  
+  rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 1s linear;
+  }
+}
+
+.btn-1:hover {
+  background: rgba(red, 0);
+  
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.nav
+{
+    text-align: center;
+    background-color: rgb(27, 90, 64);
+    margin-bottom: 5vh;
+    background-blend-mode: saturation;
+    display: flex;
+    justify-content: space-around;
+    gap: 15vw;
+}
+
+.nav h1
+{
+    font-family: cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.nav ul, h1
+{
+    line-height: 10vh;
+}
+
+.nav li
+{
+    line-height: 5vh;
+    width: 10vw;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.contact-icons li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-icons li
+{
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media screen */
+
+@media screen and (max-width:850px) {
+    .nav
+    {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav .links li
+    {
+        width: 16vw;
+    }
+}

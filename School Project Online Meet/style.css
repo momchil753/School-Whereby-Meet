@@ -1,9 +1,34 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
-
-html
+*
 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, button
+{
+    font: 14px/1.5;
     scroll-behavior: smooth;
 }
+
+body, button
+{
+    font-family: Helvetica;
+}
+
+h1 {font-family: Helvetica;}
+h2 {font-family: Helvetica;}
+h3 {font-family: Helvetica;}
+h4 {font-family: Helvetica;}
+h5 {font-family: Helvetica;}
+h6 {font-family: Helvetica;}
+
+body
+{
+    background-color: aliceblue;
+}
+
+/* Nav-bar */
 
 .btn {
     text-align: center;
@@ -16,8 +41,6 @@ html
 }
 
 .btn-1 {
-  background: darken(red, 1.5%);
-  font-weight: 100;
   
   svg {
     height: 4.8vh;
@@ -38,8 +61,6 @@ html
 
 .btn-1:hover {
   background: rgba(red, 0);
-  font-weight: 900;
-  letter-spacing: 1px;
   
   rect {
     stroke-width: 5;
@@ -49,24 +70,29 @@ html
   }
 }
 
-*
-{
-    margin: 0;
-    padding: 0;
-    background-image: url();
-    background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
-}
-
 .nav
 {
     text-align: center;
-    background-color: rgb(56, 129, 99);
+    background-color: rgb(27, 90, 64);
+    margin-bottom: 5vh;
+    background-blend-mode: saturation;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15vw;
 }
 
-.nav ul
+.nav h1
 {
-    justify-content: center;
+    font-family: cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.nav ul, h1
+{
+    line-height: 10vh;
 }
 
 .nav li
@@ -74,8 +100,19 @@ html
     line-height: 5vh;
     width: 10vw;
     cursor: pointer;
-    margin: 20px;
     display: inline-block;
+}
+
+.contact-icons li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-icons li
+{
+    width: 50px;
 }
 
 .videolink
@@ -85,156 +122,154 @@ html
     height: 90vh;
 }
 
-.container
+
+
+
+
+
+
+
+
+/* Main */
+
+.main, .secondary
 {
-    height: 60vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-.image
+.info
 {
-    float: left;
-    width: 35vw;
-    height: 48vh;
-    border-top-left-radius: 0% 0%;
-    border-top-right-radius: 25% 30%;
-    border-bottom-left-radius: 50% 27%;
-    border-bottom-right-radius: 68% 100%;
+    padding: 10px;
+    text-align: start;
 }
 
-.image2
+.info h1
 {
-    width: 14vw;
-    height: 21vh;
-    border-radius: 50%;
-    margin-left: 1vw;
+    color: rgb(45, 42, 42);
+    padding-bottom: 2vh;
+    font-size: 2.5rem;
 }
 
-.image3
-{   
-    position: absolute;
-    width: 11vw;
-    height: 17vh;
-    border-radius: 50%;
-    margin-top: 22vh;
-}
-
-.bubble
+.info p
 {
-    float: right;
-    border-top-left-radius: 25% 30%;
-    border-top-right-radius: 0% 0%;
-    border-bottom-left-radius: 68% 100%;
-    border-bottom-right-radius: 50% 27%;
-    width: 40vw;
-    background-color: #245940;
-    height: 54vh;
+    font-size: 1.3rem;
+    color: rgb(32, 30, 30);
 }
 
-.circle1
+.info .project
 {
-    margin-left: 5vw;
-    margin-top: 2vh;
-    width: 0.9vw;
-    height: 1.7vh;
-    background-color: white;
-    border-top-left-radius: 100% 100%;
-    border-top-right-radius: 100% 100%;
-    border-bottom-left-radius: 100% 100%;
-    border-bottom-right-radius: 100% 100%;
+    margin-left: 0;
+    margin-bottom: 4vh;
 }
 
-.circle2
-{
-    margin-left: 3vw;
-    margin-top: 1.5vh;
-    width: 1.3vw;
-    height: 2.4vh;
-    background-color: white;
-    border-top-left-radius: 100% 100%;
-    border-top-right-radius: 100% 100%;
-    border-bottom-left-radius: 100% 100%;
-    border-bottom-right-radius: 100% 100%;
-}
-
-.circle3
-{
-    margin-left: 3vw;
-    margin-top: 1.7vh;
-    width: 1.7vw;
-    height: 3vh;
-    background-color: white;
-    border-top-left-radius: 100% 100%;
-    border-top-right-radius: 100% 100%;
-    border-bottom-left-radius: 100% 100%;
-    border-bottom-right-radius: 100% 100%;
-}
-
-.circle4
-{
-    margin-left: 2vw;
-    margin-top: 1vh;
-    width: 2.2vw;
-    height: 3.8vh;
-    background-color: white;
-    border-top-left-radius: 100% 100%;
-    border-top-right-radius: 100% 100%;
-    border-bottom-left-radius: 100% 100%;
-    border-bottom-right-radius: 100% 100%;
-}
-
-.text
+.info .project a
 {
     color: white;
-    text-align: right;
-    font-size: 1.1rem;
-    margin-left: 10vw;
-    width: 24vw;
-} 
-
-.learn-more
-{
-    background: darken(red, 1.5%);
-    font-weight: 1.1rem;
-    width: 10vw;
-    line-height: 5vh;
-    margin-left: 25vw;
-    margin-top: 10vh;
-    
-    svg {
-      height: 4.8vh;
-      left: 0;
-      position: absolute;
-      top: 0; 
-      width: 100%; 
-    }
-    
-    rect {
-      fill: none;
-      stroke: #fff;
-      stroke-width: 2;
-      stroke-dasharray: 422, 0;
-      transition: all 1s linear;
-    }
 }
 
-.learn-more:hover
+.mainimage
 {
-    background: rgba(red, 0);
-    font-weight: 900;
-    letter-spacing: 1px;
-    
-    rect {
-      stroke-width: 5;
-      stroke-dasharray: 15, 310;
-      stroke-dashoffset: 48;
-      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-    }
+    width: 40vw;
 }
+
+.secondary .image
+{
+    width: 40vw;
+}
+
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10em;
+    margin-bottom: 5vh;
+}
+
+.plan
+{
+    background-color: rgb(148, 174, 197);
+    background-image: linear-gradient(
+        rgba(37, 35, 35, 0.5),
+        rgba(37, 36, 36, 0.5)),
+        url("isolated-tree-branch-white-background_1308-106382.avif");
+    flex: 0 0 450px;
+    color: black;
+    border-radius: 1em;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.plans h2
+{
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.plan h2
+{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    color: white;
+    text-align: center;
+}
+
+.container .things
+{
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.container .things li
+{
+    list-style-type: circle;
+    padding-bottom: 10px;
+    color: white;
+}
+
+button
+{
+    border: 0;
+    border-radius: 2em;
+    padding: 1.2em 3.4em;
+    margin-left: 7em;
+    font-weight: bold;
+    background-color: rgb(67, 131, 104);
+    margin-top: 3em;
+    margin-bottom: 6em;
+    font-size: 1rem;
+    align-items: center;
+}
+
+button a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Site go to up button */
 
 #myBtn 
 {
     position: fixed;
-    bottom: 15px;
+    bottom: 10px;
     right: 15px;
     z-index: 99;
     border: none;
@@ -254,6 +289,110 @@ html
     background-color: rgb(52, 140, 103);
 }
 
+
+
+
+
+
+
+/* Third info */
+
+.thirdinfo
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.thirdinfo h2
+{
+    text-align: center;
+    color: rgb(32, 30, 30);
+    padding-bottom: 10vh;
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.thirdinfo video
+{
+    cursor: auto;
+    width: 70%; 
+    text-align: start;
+    padding-bottom: 5vh;
+}
+
+.thirdinfo .info 
+{
+    padding-bottom: 15vh;
+    text-align: center;
+}
+
+.thirdinfo .info h1
+{
+    font-size: 1.5rem;
+}
+
+
+
+/* Fourth */
+
+.fourthinfo h2
+{
+    text-align: center;
+    color: rgb(32, 30, 30);
+    padding-bottom: 10vh;
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.text
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fourth .image
+{
+    width: 100%;
+    padding-bottom: 3vh;
+}
+
+.fourth
+{
+    flex: 0 0 450px;
+}
+
+.fourth .info
+{
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.fourth .info h1
+{   
+    font-size: 1.5rem;
+}
+
+.fourth .info p
+{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
 .footer 
 {
     padding-top: 5vh;
@@ -265,13 +404,16 @@ html
 .footer-container 
 {
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: center;
+}
+
+.footer-section:nth-child(1)
+{
+    max-width: 600px;
 }
 
 .footer-section 
 {
-    flex: 2;
     margin: 0 20px;
 }
 
@@ -324,4 +466,47 @@ html
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #85c285;
+}
+
+
+
+
+
+
+/* Media screen */
+
+@media screen and (max-width:1000px) {
+    .mainimage
+    {
+        width: 80%;
+    }
+
+    .secondary .image
+    {
+        width: 100%;
+    }
+    
+    .info 
+    {
+        text-align: center;
+    }
+
+    .fourthinfo h2 
+    {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .nav
+    {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav .links li
+    {
+        width: 16vw;
+    }
 }
