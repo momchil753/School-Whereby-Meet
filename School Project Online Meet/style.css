@@ -90,7 +90,7 @@ body
 }
 
 
-.nav ul
+.nav ul, .nav h1
 {
     line-height: 10vh;
 }
