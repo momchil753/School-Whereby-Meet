@@ -161,22 +161,77 @@ body
 
 .programme
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    height: 70vh;
-    border: 1px solid black;
+    border-top: 1px solid rgb(161, 133, 55);
     margin: 4vw 4vh 4vw 4vh;
 }
 
-.programme h1
+.programme h2
 {
-    padding-top: 3vh;
     font-family: cursive;
-    padding-bottom: 3vh;
+    margin: 5vh 0 6vh 0;
 }
 
+thead 
+{
+    color: white;
+    background-color: rgb(27, 90, 64);
+}
+
+.B 
+{
+    background-color: whitesmoke;
+}
+
+tr
+{
+    height: 5vh;
+}
+
+td  
+{
+    border: 0.5px solid black;
+}
+
+.accept
+{
+    border: 0;
+    border-radius: 2em;
+    padding: 1.2em 3.4em;
+    font-weight: bold;
+    background-color: rgb(67, 131, 104);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1rem;
+    align-items: center;
+    color: white;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.accept:hover
+{
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+
+#Teachers
+{
+    background-color: white;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin-right: 4vw;
+}
+
+.Table
+{
+    /* display: none; */
+    width: 100%;
+    text-align: center;
+    display: none;
+}
 
 
 /* Footer */

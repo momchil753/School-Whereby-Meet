@@ -30,6 +30,91 @@ body
 
 /* Nav-bar */
 
+body {
+    margin: 0;
+    background: lighten(main, 10%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+}
+
+.navbar--container {
+    background: rgb(235, 230, 224);
+    width: 70px;
+    box-shadow: 2px 2px 15px rgba(dark, .1);
+    display: none;
+}
+
+.navbar--icon {
+    margin-top: 15px;   
+    margin-left: 49px;
+    font-size: 1em;
+    transition: 1s;
+    &:hover {
+    color: rgb(27, 90, 64);
+        cursor: pointer;
+    }
+}
+
+.navbar--title {
+  margin-left: 27px;
+  margin-top: 35px;
+  h4 {
+    writing-mode: vertical-rl;
+    font-family: Helvetica;
+    letter-spacing: .34em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+}
+
+.nav--open {
+  height: 100vh;
+  width: 200px;
+  background: white;
+  transition: 0.5s ease;
+  opacity: 1;
+  box-shadow: 2px 2px 15px rgba(dark, .1);
+  background: rgb(238, 233, 229);
+}
+
+.nav--open-icon {
+  text-align: right;
+  padding: 20px;
+}
+
+.nav--open-title {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  text-align: center;
+}
+
+.nav--open-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  a {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: serif;
+    padding: 15px 0;
+  }
+}
+
+.close {
+  transform: translateX(-300px);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
 .btn {
     text-align: center;
     color: #fff;
@@ -508,5 +593,15 @@ button a
     .nav .links li
     {
         width: 16vw;
+    }
+    
+    .links
+    {
+        display: none;
+    }
+
+    .navbar--container
+    {
+        display: block;
     }
 }
