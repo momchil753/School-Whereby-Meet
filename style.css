@@ -1,0 +1,607 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, button
+{
+    font: 14px/1.5;
+    scroll-behavior: smooth;
+}
+
+body, button
+{
+    font-family: Helvetica;
+}
+
+h1 {font-family: Helvetica;}
+h2 {font-family: Helvetica;}
+h3 {font-family: Helvetica;}
+h4 {font-family: Helvetica;}
+h5 {font-family: Helvetica;}
+h6 {font-family: Helvetica;}
+
+body
+{
+    background-color: aliceblue;
+}
+
+/* Nav-bar */
+
+body {
+    margin: 0;
+    background: lighten(main, 10%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+}
+
+.navbar--container {
+    background: rgb(235, 230, 224);
+    width: 70px;
+    box-shadow: 2px 2px 15px rgba(dark, .1);
+    display: none;
+}
+
+.navbar--icon {
+    margin-top: 15px;   
+    margin-left: 49px;
+    font-size: 1em;
+    transition: 1s;
+    &:hover {
+    color: rgb(27, 90, 64);
+        cursor: pointer;
+    }
+}
+
+.navbar--title {
+  margin-left: 27px;
+  margin-top: 35px;
+  h4 {
+    writing-mode: vertical-rl;
+    font-family: Helvetica;
+    letter-spacing: .34em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+}
+
+.nav--open {
+  height: 100vh;
+  width: 200px;
+  background: white;
+  transition: 0.5s ease;
+  opacity: 1;
+  box-shadow: 2px 2px 15px rgba(dark, .1);
+  background: rgb(238, 233, 229);
+}
+
+.nav--open-icon {
+  text-align: right;
+  padding: 20px;
+}
+
+.nav--open-title {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  text-align: center;
+}
+
+.nav--open-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  a {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: serif;
+    padding: 15px 0;
+  }
+}
+
+.close {
+  transform: translateX(-300px);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.btn {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-1 {
+  
+  svg {
+    height: 4.8vh;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  
+  rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 1s linear;
+  }
+}
+
+.btn-1:hover {
+  background: rgba(red, 0);
+  
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.nav
+{
+    text-align: center;
+    background-color: rgb(27, 90, 64);
+    margin-bottom: 5vh;
+    background-blend-mode: saturation;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15vw;
+}
+
+.nav h1
+{
+    font-family: cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.nav ul, .nav h1
+{
+    line-height: 10vh;
+}
+
+.nav li
+{
+    line-height: 5vh;
+    width: 10vw;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.contact-icons li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-icons li
+{
+    width: 50px;
+}
+
+.videolink
+{
+    margin-top: 1vh;
+    width: 99vw;
+    height: 90vh;
+}
+
+
+
+
+
+
+
+
+
+/* Main */
+
+.main, .secondary
+{
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.info
+{
+    padding: 10px;
+    text-align: start;
+}
+
+.info h1
+{
+    color: rgb(45, 42, 42);
+    padding-bottom: 2vh;
+    font-size: 2.5rem;
+}
+
+.info p
+{
+    font-size: 1.3rem;
+    color: rgb(32, 30, 30);
+}
+
+.info .project
+{
+    margin-left: 0;
+    margin-bottom: 4vh;
+}
+
+.info .project a
+{
+    color: white;
+}
+
+.mainimage
+{
+    width: 40vw;
+}
+
+.secondary .image
+{
+    width: 40vw;
+}
+
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10em;
+    margin-bottom: 5vh;
+}
+
+.plan
+{
+    background-color: rgb(148, 174, 197);
+    background-image: linear-gradient(
+        rgba(37, 35, 35, 0.5),
+        rgba(37, 36, 36, 0.5)),
+        url("isolated-tree-branch-white-background_1308-106382.avif");
+    flex: 0 0 450px;
+    color: black;
+    border-radius: 1em;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.plans h2
+{
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.plan h2
+{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    color: white;
+    text-align: center;
+}
+
+.container .things
+{
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.container .things li
+{
+    list-style-type: circle;
+    padding-bottom: 10px;
+    color: white;
+}
+
+button
+{
+    border: 0;
+    border-radius: 2em;
+    padding: 1.2em 3.4em;
+    margin-left: 7em;
+    font-weight: bold;
+    background-color: rgb(67, 131, 104);
+    margin-top: 3em;
+    margin-bottom: 6em;
+    font-size: 1rem;
+    align-items: center;
+}
+
+button a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Site go to up button */
+
+#myBtn 
+{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(56, 129, 99); 
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 1s all;
+}
+  
+#myBtn:hover
+{
+    transform: scale(1.05);
+    background-color: rgb(52, 140, 103);
+}
+
+
+
+
+
+
+
+/* Third info */
+
+.thirdinfo
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.thirdinfo h2
+{
+    text-align: center;
+    color: rgb(32, 30, 30);
+    padding-bottom: 10vh;
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.thirdinfo video
+{
+    cursor: auto;
+    width: 70%; 
+    text-align: start;
+    padding-bottom: 5vh;
+}
+
+.thirdinfo .info 
+{
+    padding-bottom: 15vh;
+    text-align: center;
+}
+
+.thirdinfo .info h1
+{
+    font-size: 1.5rem;
+}
+
+
+
+/* Fourth */
+
+.fourthinfo h2
+{
+    text-align: center;
+    color: rgb(32, 30, 30);
+    padding-bottom: 10vh;
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.text
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fourth .image
+{
+    width: 100%;
+    padding-bottom: 3vh;
+}
+
+.fourth
+{
+    flex: 0 0 450px;
+}
+
+.fourth .info
+{
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.fourth .info h1
+{   
+    font-size: 1.5rem;
+}
+
+.fourth .info p
+{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer 
+{
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    background-color: #2b5f42;
+    color: #fff;
+}
+
+.footer-container 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section:nth-child(1)
+{
+    max-width: 600px;
+}
+
+.footer-section 
+{
+    margin: 0 20px;
+}
+
+.footer-section h3 
+{
+    margin-bottom: 20px;
+}
+
+.footer-section p 
+{
+    line-height: 1.6;
+}
+
+.footer-section ul 
+{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li 
+{
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover 
+{
+    color: #90ee90;
+}
+
+.social-links 
+{
+    gap: 10px;
+}
+
+.social-links li 
+{
+    list-style: none;
+}
+
+.footer-bottom 
+{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #85c285;
+}
+
+
+
+
+
+
+/* Media screen */
+
+@media screen and (max-width:1000px) {
+    .mainimage
+    {
+        width: 80%;
+    }
+
+    .secondary .image
+    {
+        width: 100%;
+    }
+    
+    .info 
+    {
+        text-align: center;
+    }
+
+    .fourthinfo h2 
+    {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .nav
+    {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav .links li
+    {
+        width: 16vw;
+    }
+    
+    .links
+    {
+        display: none;
+    }
+
+    .navbar--container
+    {
+        display: block;
+    }
+}

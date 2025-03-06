@@ -1,0 +1,327 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font: 14px/1.5;
+    scroll-behavior: smooth;
+}
+
+body, button
+{
+    font-family: "Helvetica";
+}
+
+h1 {font-family: "Helvetica";}
+h2 {font-family: "Helvetica";}
+h3 {font-family: "Helvetica";}
+h4 {font-family: "Helvetica";}
+h5 {font-family: "Helvetica";}
+h6 {font-family: "Helvetica";}
+
+body
+{
+    background-color: aliceblue;
+}
+
+/* Nav-bar */
+
+.btn {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-1 {
+  
+  svg {
+    height: 4.8vh;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  
+  rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 1s linear;
+  }
+}
+
+.btn-1:hover {
+  background: rgba(red, 0);
+  
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.nav
+{
+    text-align: center;
+    background-color: rgb(27, 90, 64);
+    background-blend-mode: saturation;
+    display: flex;
+    justify-content: space-around;
+    gap: 15vw;
+}
+
+.nav h1
+{
+    font-family: cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+.nav ul, h1
+{
+    line-height: 10vh;
+}
+
+.nav li
+{
+    line-height: 5vh;
+    width: 10vw;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.contact-icons li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-icons li
+{
+    width: 50px;
+}
+
+
+
+
+
+
+/* Text */
+
+.text
+{
+    text-align: right;
+    font-size: 1.4rem;
+    padding: 0 2vw 4vh 0;
+    color: rgb(32, 30, 30);
+}
+
+.about h1
+{
+    padding: 3vh 0 5vh 0;
+    font-family: cursive;
+    padding-bottom: 3vh;
+}
+
+
+
+
+
+
+/* Container */
+
+.container
+{
+    margin: 0;
+    text-align: center;
+}
+
+.container .videolink
+{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 10vh;
+}
+
+
+
+
+/* Programme */
+
+.programme
+{
+    border-top: 1px solid rgb(161, 133, 55);
+    margin: 4vw 4vh 4vw 4vh;
+}
+
+.programme h2
+{
+    font-family: cursive;
+    margin: 5vh 0 6vh 0;
+}
+
+thead 
+{
+    color: white;
+    background-color: rgb(27, 90, 64);
+}
+
+.B 
+{
+    background-color: whitesmoke;
+}
+
+tr
+{
+    height: 5vh;
+}
+
+td  
+{
+    border: 0.5px solid black;
+}
+
+.accept
+{
+    border: 0;
+    border-radius: 2em;
+    padding: 1.2em 3.4em;
+    font-weight: bold;
+    background-color: rgb(67, 131, 104);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1rem;
+    align-items: center;
+    color: white;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.accept:hover
+{
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+
+#Teachers
+{
+    background-color: white;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin-right: 4vw;
+}
+
+.Table
+{
+    /* display: none; */
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+
+/* Footer */
+
+.footer 
+{
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    background-color: rgb(19, 87, 60);
+    color: #fff;
+}
+
+.footer-container 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section:nth-child(1)
+{
+    max-width: 600px;
+}
+
+.footer-section 
+{
+    margin: 0 20px;
+}
+
+.footer-section h3 
+{
+    margin-bottom: 20px;
+}
+
+.footer-section p 
+{
+    line-height: 1.6;
+}
+
+.footer-section ul 
+{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li 
+{
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover 
+{
+    color: #90ee90;
+}
+
+.social-links 
+{
+    gap: 10px;
+}
+
+.social-links li 
+{
+    list-style: none;
+}
+
+.footer-bottom 
+{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #85c285;
+}
+
+/* Media screen */
+
+@media screen and (max-width:850px) {
+    .nav
+    {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav .links li
+    {
+        width: 16vw;
+    }
+}
