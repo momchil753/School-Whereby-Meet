@@ -1,5 +1,6 @@
 let mybutton = document.getElementById("myBtn");
 
+
 function topFunction() {
   document.documentElement.scrollTop = 0;
 }
@@ -17,3 +18,4 @@ open.addEventListener('click', function() {
 close.addEventListener('click', function() {
   menu.classList.toggle('close');
 })
+

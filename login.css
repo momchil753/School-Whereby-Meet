@@ -23,16 +23,21 @@ h4 {font-family: Helvetica;}
 h5 {font-family: Helvetica;}
 h6 {font-family: Helvetica;}
 
-body
-{
-    background-color: aliceblue;
-}
-
-/* Nav-bar */
-
 body {
+    background-color: aliceblue;  
     margin: 0;
     background: lighten(main, 10%);
+    font-family: Helvetica;
+}
+
+.quote
+{
+    font-family: cursive;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 4rem;
 }
 
 a {
@@ -215,133 +220,6 @@ a {
 
 
 
-/* Main */
-
-.main, .secondary
-{
-    margin-bottom: 5vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.info
-{
-    padding: 10px;
-    text-align: start;
-}
-
-.info h1
-{
-    color: rgb(45, 42, 42);
-    padding-bottom: 2vh;
-    font-size: 2.5rem;
-}
-
-.info p
-{
-    font-size: 1.3rem;
-    color: rgb(32, 30, 30);
-}
-
-.info .project
-{
-    margin-left: 0;
-    margin-bottom: 4vh;
-}
-
-.info .project a
-{
-    color: white;
-}
-
-.mainimage
-{
-    width: 40vw;
-}
-
-.secondary .image
-{
-    width: 40vw;
-}
-
-
-.container
-{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10em;
-    margin-bottom: 5vh;
-}
-
-.plan
-{
-    background-color: rgb(148, 174, 197);
-    background-image: linear-gradient(
-        rgba(37, 35, 35, 0.5),
-        rgba(37, 36, 36, 0.5)),
-        url("isolated-tree-branch-white-background_1308-106382.avif");
-    flex: 0 0 450px;
-    color: black;
-    border-radius: 1em;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.35);
-    z-index: 1;
-}
-
-.plans h2
-{
-    padding-bottom: 2em;
-    text-align: center;
-}
-
-.plan h2
-{
-    padding-top: 1em;
-    padding-bottom: 2em;
-    color: white;
-    text-align: center;
-}
-
-.container .things
-{
-    padding-left: 4em;
-    padding-right: 4em;
-}
-
-.container .things li
-{
-    list-style-type: circle;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.plan-2 .things
-{
-    word-spacing: 4.5px;
-}
-
-button
-{
-    border: 0;
-    border-radius: 2em;
-    padding: 1.2em 3.4em;
-    margin-left: 7em;
-    font-weight: bold;
-    background-color: rgb(67, 131, 104);
-    margin-top: 3em;
-    margin-bottom: 6em;
-    font-size: 1rem;
-    align-items: center;
-}
-
-button a
-{
-    color: white;
-    text-decoration: none;
-}
 
 
 
@@ -353,123 +231,6 @@ button a
 
 
 
-
-/* Site go to up button */
-
-#myBtn 
-{
-    position: fixed;
-    bottom: 10px;
-    right: 15px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: rgb(56, 129, 99); 
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-    transition: 1s all;
-}
-  
-#myBtn:hover
-{
-    transform: scale(1.05);
-    background-color: rgb(52, 140, 103);
-}
-
-
-
-
-
-
-
-/* Third info */
-
-.thirdinfo
-{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-}
-
-.thirdinfo h2
-{
-    text-align: center;
-    color: rgb(32, 30, 30);
-    padding-bottom: 10vh;
-    font-size: 3rem;
-    font-family: cursive;
-}
-
-.thirdinfo video
-{
-    cursor: auto;
-    width: 70%; 
-    text-align: start;
-    padding-bottom: 5vh;
-}
-
-.thirdinfo .info 
-{
-    padding-bottom: 15vh;
-    text-align: center;
-}
-
-.thirdinfo .info h1
-{
-    font-size: 1.5rem;
-}
-
-
-
-/* Fourth */
-
-.fourthinfo h2
-{
-    text-align: center;
-    color: rgb(32, 30, 30);
-    padding-bottom: 10vh;
-    font-size: 3rem;
-    font-family: cursive;
-}
-
-.text
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.fourth .image
-{
-    width: 100%;
-    padding-bottom: 3vh;
-}
-
-.fourth
-{
-    flex: 0 0 450px;
-}
-
-.fourth .info
-{
-    text-align: center;
-    padding-bottom: 5vh;
-}
-
-.fourth .info h1
-{   
-    font-size: 1.5rem;
-}
-
-.fourth .info p
-{
-    font-size: 1.2rem;
-}
 
 
 
@@ -489,6 +250,10 @@ button a
     padding-bottom: 3vh;
     background-color: #2b5f42;
     color: #fff;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-container 
@@ -557,54 +322,3 @@ button a
     padding-top: 20px;
     border-top: 1px solid #85c285;
 }
-
-
-/* Media screen */
-
-@media screen and (max-width:1000px) {
-    .mainimage
-    {
-        width: 80%;
-    }
-
-    .secondary .image
-    {
-        width: 100%;
-    }
-    
-    .info 
-    {
-        text-align: center;
-    }
-
-    .fourthinfo h2 
-    {
-        font-size: 1.7rem;
-    }
-}
-
-
-@media screen and (max-width:850px) {
-    .nav
-    {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .nav .links li
-    {
-        width: 16vw;
-    }
-    
-    .links
-    {
-        display: none;
-    }
-
-    .navbar--container
-    {
-        display: block;
-    }
-}
-
-

@@ -121,10 +121,13 @@ body
 
 .text
 {
+    border-top: 1px solid rgb(161, 133, 55);
+    border-bottom: 1px solid rgb(161, 133, 55);
     text-align: right;
     font-size: 1.4rem;
-    padding: 0 2vw 4vh 0;
+    padding: 4vh 2vw 7vh 2vw;
     color: rgb(32, 30, 30);
+    margin-top: 6vh;
 }
 
 .about h1
@@ -151,7 +154,6 @@ body
 {
     width: 100%;
     height: 100vh;
-    padding-bottom: 10vh;
 }
 
 
@@ -161,8 +163,7 @@ body
 
 .programme
 {
-    border-top: 1px solid rgb(161, 133, 55);
-    margin: 4vw 4vh 4vw 4vh;
+    margin: 0vw 4vh 4vw 4vh;
 }
 
 .programme h2
@@ -240,7 +241,7 @@ td
 {
     padding-top: 5vh;
     padding-bottom: 3vh;
-    background-color: rgb(19, 87, 60);
+    background-color: #2b5f42;
     color: #fff;
 }
 
