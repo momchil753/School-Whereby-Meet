@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host = '192.168.0.173';  // HMailServer SMTP server (use IP address if needed)
+        $mail->Host = '109.104.217.24';  // HMailServer SMTP server (use IP address if needed)
         $mail->SMTPAuth = true;
         $mail->Username = 'admin@127.0.0.1'; // Your SMTP user email
         $mail->Password = '123456'; // SMTP password
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
         // Send the email
         if ($mail->send()) {
-            echo 'Message has been sent!';
+            echo 'Съобщението Ви е изпратено!';
         } else {
             echo 'Message could not be sent!';
         }
